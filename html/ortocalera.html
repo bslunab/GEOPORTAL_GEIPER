@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>GEOPORTAL</title>
+    <style type="text/css">
+      * {
+        padding: 0px;
+        margin: 1px;
+      }
+
+      #header {
+        margin: 1px;
+        width: 1200px;
+      }
+      ul,
+      ol {
+        list-style: none;
+      }
+      .nav li a {
+        padding: 5px 10px;
+        display: block;
+      }
+      .nav li a:hover {
+        background-color: ButtonFace;
+      }
+
+      .nav > li {
+        float: right;
+      }
+      .nav li ul {
+        position: relative;
+        min-width: 180px;
+        display: none;
+      }
+      .nav li:hover > ul {
+        display: block;
+      }
+      .nav li ul li {
+        position: relative;
+      }
+      .nav li ul li ul {
+        right: -140px;
+        top: 0px;
+      }
+    </style>
+
+    <link rel="stylesheet" href="/css/ol-layerswitcher.css" />
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
+  </head>
+
+  <body>
+    <div id="header">
+      <ul class="nav">
+        <a href="../index.html">
+          <img src="/img/GE.png" height="40" width="80" /> </a
+        >&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <li>
+          <a href="#">
+            Elevación
+          </a>
+          <ul>
+            <li>
+              <a href="elevmund.html" style="background-color: #c2ff79;">
+                Mundial
+              </a>
+            </li>
+
+            <li>
+              <a href="#" style="background-color: #f8d8d1;">
+                Continental
+              </a>
+            </li>
+
+            <li>
+              <a href="elevnac.html" style="background-color: #c2ff79;;">
+                Nacional
+              </a>
+            </li>
+
+            <li>
+              <a href="#" style="background-color: #f8d8d1;">
+                Departamental
+              </a>
+              <!-- <ul>
+                        <a href="">
+                            Cundinamarca
+                        </a>
+                    </ul> -->
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">
+            Geografía
+          </a>
+          <ul>
+            <li>
+              <a href="#" style="background-color: #f8d8d1;">
+                Continental
+              </a>
+            </li>
+
+            <li>
+              <a href="#" style="background-color: #f8d8d1;">
+                Nacional
+              </a>
+            </li>
+
+            <li>
+              <a href="#" style="background-color: #c2ff79">
+                Departamental
+              </a>
+              <ul>
+                <a href="geocundi.html">
+                  Cundinamarca
+                </a>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">
+            Información Catastral
+          </a>
+          <ul>
+            <li>
+              <a href="#" style="background-color: #f8d8d1;">
+                Municipal
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">
+            Uso y Cobertura de la Tierra
+          </a>
+          <ul>
+            <li>
+              <a href="#" style="background-color: #c2ff79;">
+                Departamental
+              </a>
+              <ul>
+                <a href="usocundinamarca.html">
+                  Cundinamarca
+                </a>
+              </ul>
+            </li>
+            <li>
+              <a href="#" style="background-color: #c2ff79">
+                Municipal
+              </a>
+              <ul>
+                <a href="usobogota.html">
+                  Bogotá
+                </a>
+              </ul>
+              <ul>
+                <a href="usobuenav.html">
+                  Buenaventura
+                </a>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            Ortoimágenes
+          </a>
+          <ul>
+            <li>
+              <a href="#" style="background-color: #c2ff79">
+                Municipal
+              </a>
+              <ul>
+                <a href="ortoguatav.html">
+                  Guatavita
+                </a>
+              </ul>
+              <ul>
+                <a href="ortocalera.html">
+                  La Calera
+                </a>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            Otro Tipo de Información
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <hr />
+
+    <div id="map" class="map" style="height: 600px"></div>
+    <script src="/js/ortocalera.js"></script>
+  </body>
+</html>
